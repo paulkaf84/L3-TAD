@@ -30,6 +30,7 @@ void suivant(ListeSC L);
 char getValeur(ListeSC L);
 void supprimerListe(ListeSC L);
 void printListe(ListeSC L);
+int countOccurrence(ListeSC L, char letter);
 
 
 Element creerElement(char C);

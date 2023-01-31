@@ -29,10 +29,9 @@ void insererDebut(ListeSC L, char C)
     L->taille += 1;
 }
 
-void insererFin(ListeSC L, char C)
-{
+void insererFin(ListeSC L, char C) {
     Element E = creerElement(C);
-    if(L->taille == 0){
+    if (L->taille == 0) {
         L->debut = E;
         L->fin = E;
         L->curseur = E;
@@ -173,4 +172,15 @@ void printListe(ListeSC L)
         suivant(L);
     }
     printf("\n");
+}
+
+int countOccurrence(ListeSC L, char letter)
+{
+    int count = 0;
+    debutListe(L);
+    for(int i = 0; i < tailleListe(L); i++){
+        count += (getValeur(L) == letter) ? 1:0;
+        suivant(L);
+    }
+    return count;
 }
