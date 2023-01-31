@@ -164,3 +164,13 @@ Element creerElement(char C)
     E->suivant = NULL;
     return E;
 }
+
+void printListe(ListeSC L)
+{
+    debutListe(L);
+    for(int i = 0; i < tailleListe(L); i++){
+        printf("Element %d: Valeur: %c\n", i+1, getValeur(L));
+        suivant(L);
+    }
+    printf("\n");
+}

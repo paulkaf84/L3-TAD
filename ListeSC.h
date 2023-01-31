@@ -29,6 +29,7 @@ void finListe(ListeSC L);
 void suivant(ListeSC L);
 char getValeur(ListeSC L);
 void supprimerListe(ListeSC L);
+void printListe(ListeSC L);
 
 
 Element creerElement(char C);
