@@ -1,21 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "ListeSC.h"
-#include "ListeSC.c"
+#include "ListeDC.h"
+#include "ListeDC.c"
 
 
 int main() {
 
-    ListeSC L = creerListe();
-    insererFin(L,'C');
-    insererFin(L,'Z');
-    insererFin(L,'A');
-    insererFin(L,'A');
-    insererFin(L,'D');
+    ListeDC L = creerListe();
+    insererAvant(L,'A');
+    insererAvant(L,'B');
+    insererAvant(L,'C');
+    insererAvant(L,'D');
 
-    printListe(L);
-    printf("%d", countOccurrence(L, 'A'));
+
     supprimerListe(L);
 
-	return 0;
+    return 0;
 }
+

@@ -23,3 +23,14 @@ void insererApres(ListeDC L, char C);
 void supprimerDebut(ListeDC L);
 void supprimerFin(ListeDC L);
 void supprimerAvant(ListeDC L);
+void supprimerApres(ListeDC L);
+int tailleListe(ListeDC L);
+void debutListe(ListeDC L);
+void finListe(ListeDC L);
+void suivant(ListeDC L);
+void precedent(ListeDC L);
+char getValeur(ListeDC L);
+void supprimerListe(ListeDC L);
+
+
+Element creerElement(char C);
