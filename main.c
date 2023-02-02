@@ -3,6 +3,23 @@
 #include "ListeDC.h"
 #include "ListeDC.c"
 
+void prv(ListeDC L){
+    finListe(L);
+    for (int i = 0; i < tailleListe(L); ++i) {
+        printf("%c", getValeur(L));
+        precedent(L);
+    }
+    printf("\n");
+}
+
+void pf(ListeDC L){
+    debutListe(L);
+    for (int i = 0; i < tailleListe(L); ++i) {
+        printf("%c", getValeur(L));
+        suivant(L);
+    }
+    printf("\n");
+}
 
 int main() {
 
@@ -12,6 +29,8 @@ int main() {
     insererAvant(L,'C');
     insererAvant(L,'D');
 
+    prv(L);
+    pf(L);
 
     supprimerListe(L);
 
